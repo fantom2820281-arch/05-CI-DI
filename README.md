@@ -19,15 +19,14 @@
 
 1. Мы создали 2 машины с помощью [terraform](terraform/) и настроили их с помощью [ansible](ansible/).
 2. Установили jenkins и golang.
-3. Сделали fork [репозитория](https://github.com/songspeta/8-02-hw-add-.git).
-4. Создали в jenkins Freestyle Project
+3. Создали в jenkins Freestyle Project
 
 
 
 
 ### Скриншоты
 #### 1. Подключение к Git-репозиторию
-![Подключение к Git](img/jenkins_git.png)
+![Подключение к Git](img/)
 #### 2. Шаги сборки
 ![Шаги сборки](img/jenkins_steps.png)
 #### 3. Успешная сборка
@@ -56,7 +55,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/songspeta/8-02-hw-add-.git'
+                git branch: 'main', url: 'github.com/fantom2820281-arch/05-CI-DI'
             }
         }
 
